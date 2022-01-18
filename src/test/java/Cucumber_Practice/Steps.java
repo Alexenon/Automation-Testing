@@ -1,8 +1,11 @@
 package Cucumber_Practice;
 
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-public class LoginPractice {
+public class Steps {
 
     @Given("user is on login page")
     public void userIsOnLoginPage() {
