@@ -12,7 +12,9 @@ Feature: My first cucumber test
     And clicks on login button
     Then the user is logged in
 
-  Scenario: Leave a like and a comment to a post
-    Given <user page> where you would like to leave a comment
-    When user chooses <post>
-    And clicks on
+  Scenario: Leave a comment to a post
+    Given <user page> where user would like to leave a comment
+    When user chooses a <post>
+    And send <keys> in comment section
+    Then the comment is posted
+
