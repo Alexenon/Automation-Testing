@@ -4,7 +4,7 @@
 
     <test name="My first Test Trial">
         <classes>
-            <class name="TestNG_Practice.FirstTrial">
+            <class name="testng_practice.FirstTrial">
                 <methods>
                     <exclude name="shouldFail"/>
                 </methods>
@@ -26,7 +26,7 @@
         </groups>
 
         <classes>
-            <class name="TestNG_Practice.SecondTrial"/>
+            <class name="testng_practice.SecondTrial"/>
         </classes>
     </test>
 
@@ -39,7 +39,7 @@
         </groups>
 
         <classes>
-            <class name="TestNG_Practice.SecondTrial">
+            <class name="testng_practice.SecondTrial">
                 <methods>
                     <exclude name="passTest"></exclude>
                 </methods>
