@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="First Trial Suite">
+    <test name="My first Test Trial">
+        <parameter name="username" value="Hazzardy"/>
+        <parameter name="password" value="#demoqa1842"/>
+        <classes>
+            <class name="TestNG_Practice.Homework">
+                <methods>
+                    <include name="submitLogin"/>
+                    <include name="loginValidation"/>
+                    <include name="books"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

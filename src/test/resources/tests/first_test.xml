@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="First Trial Suite">
+
+    <test name="My first Test Trial">
+        <classes>
+            <class name="TestNG_Practice.FirstTrial">
+                <methods>
+                    <exclude name="shouldFail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Second Trial Test">
+        <parameter name="numberOfTimes" value="10"/>
+        <groups>
+            <define name="all">
+                <include name="init"/>
+                <include name="first_group"/>
+            </define>
+
+            <run>
+                <include name="all"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TestNG_Practice.SecondTrial"/>
+        </classes>
+    </test>
+
+    <test name="Third Trial Test">
+        <parameter name="numberOfTimes" value="-10"/>
+        <groups>
+            <run>
+                <include name="first_group"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TestNG_Practice.SecondTrial">
+                <methods>
+                    <exclude name="passTest"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
