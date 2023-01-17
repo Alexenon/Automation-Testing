@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 
 public class BookStorePage extends WebPage{
@@ -22,12 +23,11 @@ public class BookStorePage extends WebPage{
     }
 
     public void searchForBooks(String bookName){
-
-        for (int i = 0; i < tableRows.size(); i++) {
+        for (WebElement tableRow : tableRows) {
             scrollPage(0, 100);
             wait(750);
-            if(tableRows.get(i).getText().equals(bookName)) {
-                tableRows.get(i).click();
+            if (tableRow.getText().equals(bookName)) {
+                tableRow.click();
                 break;
             }
         }
@@ -41,8 +41,5 @@ public class BookStorePage extends WebPage{
         WebElement addBookBtn = driver.findElement(By.id("addNewRecordButton"));
         js.executeScript("arguments[0].click();", addBookBtn);
         wait(2000);
-        driver.switchTo().alert().accept();
-
-        //mgorbatin@gmail.com
     }
 }

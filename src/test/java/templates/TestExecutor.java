@@ -9,11 +9,11 @@ public class TestExecutor {
         this.tests = tests;
     }
 
-    public void runTests(){
-        runTests(tests);
+    public static void runTests(List<AbstractTest> tests){
+        tests.forEach(AbstractTest::run);
     }
 
-    public static void runTests(List<AbstractTest> tests){
-        tests.forEach(test -> test.run());
+    public List<AbstractTest> getTests() {
+        return tests;
     }
 }

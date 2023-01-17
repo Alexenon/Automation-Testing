@@ -7,27 +7,27 @@ public class TestLoginPageSteps {
     TestLoginPage testLoginPage;
 
     @Step
-    public void openPage(){
+    public void openPage() {
         testLoginPage.open();
     }
 
     @Step
-    public void userClickLoginButton(){
+    public void userClickLoginButton() {
         testLoginPage.userClickLoginButton();
     }
 
     @Step
-    public void userInsertEmail(String email){
+    public void userInsertEmail(String email) {
         testLoginPage.userInsertEmail(email);
     }
 
     @Step
-    public void userInsertPassword(String password){
+    public void userInsertPassword(String password) {
         testLoginPage.userInsertPassword(password);
     }
 
     @Step
-    public void userSubmitLogin(){
+    public void userSubmitLogin() {
         testLoginPage.userSubmitLogin();
     }
 

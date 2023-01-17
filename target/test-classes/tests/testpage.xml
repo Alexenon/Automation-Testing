@@ -5,7 +5,7 @@
         <parameter name="username" value="Hazzardy"/>
         <parameter name="password" value="#demoqa1842"/>
         <classes>
-            <class name="testng_practice.Homework">
+            <class name="testng_practice.HomeworkTestCase">
                 <methods>
                     <include name="submitLogin"/>
                     <include name="loginValidation"/>

@@ -26,7 +26,7 @@
         </groups>
 
         <classes>
-            <class name="testng_practice.SecondTrial"/>
+            <class name="testng_practice.SecondTrialTestCase"/>
         </classes>
     </test>
 
@@ -39,7 +39,7 @@
         </groups>
 
         <classes>
-            <class name="testng_practice.SecondTrial">
+            <class name="testng_practice.SecondTrialTestCase">
                 <methods>
                     <exclude name="passTest"></exclude>
                 </methods>

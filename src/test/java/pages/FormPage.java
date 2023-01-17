@@ -1,11 +1,11 @@
 package pages;
-import org.apache.logging.log4j.LogManager;
+
 import org.junit.Assert;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 import java.util.Random;
 
@@ -191,7 +191,7 @@ public class FormPage extends WebPage{
         chooseCity(2);
         submitForm();
         wait(2000);
-        takeSreenshot(driver, "D:\\Alex\\Programming\\Java\\MavenProject\\src\\test\\resources\\images\\Screenshot.png");
+        takeScreenshot(driver, "D:\\Alex\\Programming\\Java\\MavenProject\\src\\test\\resources\\images\\Screenshot.png");
     }
 
     public void submitForm(){

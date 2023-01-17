@@ -12,25 +12,20 @@ public class TestLoginPage extends PageObject {
     private final By inputPassword = By.xpath("//input[@id='user_password']");
     private final By BtnSubmitLogin = By.xpath("//input[@value='Login']");
 
-    public void userClickLoginButton(){
+    public void userClickLoginButton() {
         find(BtnLogin).click();
     }
 
-    public void userInsertEmail(String email){
+    public void userInsertEmail(String email) {
         find(inputEmail).sendKeys(email);
     }
 
-    public void userInsertPassword(String password){
+    public void userInsertPassword(String password) {
         find(inputPassword).sendKeys(password);
     }
 
-    public void userSubmitLogin(){
+    public void userSubmitLogin() {
         find(BtnSubmitLogin).click();
     }
-
-
-
-
-
 
 }

@@ -4,7 +4,6 @@ import java.util.List;
 public class Demonstration {
 
     public static void main(String[] args) {
-
         AbstractTest test1 = new Test1();
         AbstractTest test2 = new Test2();
         AbstractTest test3 = new Test3();
